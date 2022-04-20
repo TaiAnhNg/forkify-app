@@ -13,10 +13,6 @@
   margin-top: auto;
   padding: 0 3.5rem;
 
-  @media only screen and (max-width: $bp-smallest) {
-    padding: 1.5rem;
-  }
-
   &::after {
     content: '';
     display: table;
@@ -42,5 +38,11 @@
   .twitter-link:link,
   .twitter-link:visited {
     color: $color-grey-dark-2;
+  }
+}
+
+@media only screen and (max-width: $bp-smallest) {
+  .search-results {
+    transform: translateX(0%);
   }
 }

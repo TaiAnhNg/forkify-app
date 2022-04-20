@@ -34,6 +34,15 @@
     width: 2.25rem;
     fill: currentColor;
   }
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+
+    svg {
+      height: 1.9rem;
+      width: 1.9rem;
+    }
+  }
 }
 
 .btn--small {
@@ -116,6 +125,11 @@
     height: 2.5rem;
     width: 2.5rem;
     fill: #fff;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 10rem;
   }
 }
 

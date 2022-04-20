@@ -13,7 +13,7 @@ $gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
 
 $bp-large: 78.15em; // 1250px
 $bp-medium: 61.25em; // 980px
-$bp-small: 37.5em; // 600px
+$bp-small: 43.8em; // 600px
 $bp-smallest: 31.25em; // 500px
 
 * {
@@ -34,9 +34,8 @@ html {
   @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
   }
-
-  @media only screen and (max-width: $bp-smallest) {
-    font-size: 22%;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
   }
 }
 
@@ -71,5 +70,8 @@ body {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    display: block;
   }
 }

@@ -3,7 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100rem;
+  width: 80%;
+  // width: 100rem;
   background-color: white;
   border-radius: 9px;
 
@@ -24,8 +25,14 @@
     background: none;
   }
 
+  @media only screen and (max-width: $bp-medium) {
+    width: 95%;
+    padding: 4rem 5rem;
+  }
+
   @media only screen and (max-width: $bp-smallest) {
-    width: 80rem;
+    width: 100%;
+    padding: 4rem 1rem;
   }
 }
 
@@ -99,5 +106,27 @@
   &__btn {
     grid-column: 1 / -1;
     justify-self: center;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    gap: 3rem 3rem;
+
+    &__column {
+      grid-template-columns: 1fr 2.8fr;
+      gap: 1rem;
+    }
+
+    & label {
+      font-size: 1.35rem;
+    }
+
+    & input {
+      font-size: 1.35rem;
+      padding: 0.8rem 0.8rem;
+    }
+
+    &__heading {
+      font-size: 1.9rem;
+    }
   }
 }
