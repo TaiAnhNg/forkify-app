@@ -42,7 +42,13 @@
 }
 
 @media only screen and (max-width: $bp-smallest) {
-  .search-results {
-    transform: translateX(0%);
+  // .search-results {
+  //    transform: translateX(0%);
+  // }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
