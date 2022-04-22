@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 60%;
   // width: 100rem;
   background-color: white;
   border-radius: 9px;
@@ -25,14 +25,13 @@
     background: none;
   }
 
+  @media only screen and (max-width: $bp-large) {
+    width: 80%;
+  }
+
   @media only screen and (max-width: $bp-medium) {
     width: 95%;
     padding: 4rem 5rem;
-  }
-
-  @media only screen and (max-width: $bp-smallest) {
-    width: 100%;
-    padding: 4rem 1rem;
   }
 }
 
@@ -107,8 +106,14 @@
     grid-column: 1 / -1;
     justify-self: center;
   }
+}
+@media only screen and (max-width: $bp-smallest) {
+  .add-recipe-window {
+    width: 100%;
+    padding: 3rem 1rem;
+  }
 
-  @media only screen and (max-width: $bp-smallest) {
+  .upload {
     gap: 3rem 3rem;
 
     &__column {
